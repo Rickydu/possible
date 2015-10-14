@@ -1,0 +1,13 @@
+Index: resource/js/main.js
+===================================================================
+--- resource/js/main.js	(revision 3331)
++++ resource/js/main.js	(working copy)
+@@ -183,7 +183,7 @@
+     $('.middle-result.error .replay').click(function(e){
+         e.preventDefault();
+     	$('.middle-result.error').hide();
+-        status.b = 0;
++        // status.b = 0;
+     	renderQA(getQAs());
+     	$('.q-and-a').show();
+     });

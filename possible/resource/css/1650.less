@@ -1,0 +1,137 @@
+@import "prefixer";
+@import "reset";
+@media(min-width:1650px){
+	.mc-container{
+		@pageWidth:1610px;
+		.intel-it-center{
+			height: 120px;
+			background:#045eaa;
+			background: url(../images/768/header.jpg) center center no-repeat #045eaa;
+			.inset{
+				width: @pageWidth;
+				height: 120px;
+				margin: 0 auto;
+				.rel;
+				.share{
+					.rect(24px);
+					background: url(../images/1650/ico-share.jpg);
+					background: url(../images/1200/ico-share.png);
+					.abs;
+					right: 10px;
+					bottom: 10px;
+					.pointer;
+				}
+				.back-index{
+					color: #fff;
+				}
+			}
+		}
+
+		.banner{
+			>.inset{
+				.rect(@pageWidth, 576px);
+				.rule{
+					right: 120px;
+				}
+				.logo{
+					.rect(557px, 184px);
+					background: url(../images/1650/banner.png) left top no-repeat;
+					.abs;
+					.pos(0);
+					z-index: 999;
+				}
+				.sense{
+					&.sense-1{
+						.txt{
+							left:760px;
+						}
+						.cards{
+							width:1078px;
+							left:50%;
+							.ml(-536px);
+						}
+					}
+					&.sense-2{
+						.pix-bg{
+							background-position: 230px center;
+						}
+						.cards{
+							left:626px;
+						}
+						.ttl{
+							left:924px;
+						}
+						.progress{
+							left:1070px;
+						}
+						.qa-and-result{
+							.abs;
+							left:806px;
+						}
+					}
+				}
+			}	
+		}
+
+
+		.info-summary{
+		}
+
+
+		.info-list{
+			>.inset{
+				width: @pageWidth;
+				ul{
+					li{
+						width: 33.33%;
+						&.left{
+							.imgbox{
+								.ml(0);
+							}
+							.info{
+								.pr(33px);
+								.ml(170px);
+							}
+						}
+						&.middle{
+							.imgbox{
+								.ml(16px);
+							}
+							.info{
+								.ml(186px);
+								.pr(16px);
+							}
+						}
+						&.right{
+							.imgbox{
+								.ml(33px);
+							}
+							.info{
+								.ml(203px);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// .footer{
+		// 	.pt(120px);
+		// 	background: url(../images/1200/logo-footer.jpg) top center no-repeat;
+		// 	height: 140px;
+		// 	text-align: center;
+		// 	.ttl{
+		// 		font-size: 14px;
+		// 		line-height: 2;
+		// 		.mb(30px);
+		// 		color: #5f5f5f;
+		// 	}
+		// 	.btn-primary{
+		// 		width: 210px;
+		// 		border-radius: 0;
+		// 		box-shadow: 0 0 0;
+		// 	}
+		// }
+
+	}
+}

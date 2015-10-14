@@ -1,0 +1,124 @@
+@import "prefixer";
+@import "reset";
+
+@media(min-width:768px) and (max-width:991px){
+	@pageWidth: 750px;
+	.mc-container{
+		background:url(../images/768/rule/bg.jpg) center 120px no-repeat #202020;
+		.intel-it-center{
+			height: 120px;
+			background:#045eaa;
+			background: url(../images/768/header.jpg) top center no-repeat #045eaa;
+			.inset{
+				width: @pageWidth;
+				height: 120px;
+				margin: 0 auto;
+				.rel;
+				.share{
+					.rect(24px);
+					background: url(../images/1650/ico-share.jpg);
+					background: url(../images/1200/ico-share.png);
+					.abs;
+					right: 10px;
+					bottom: 10px;
+					.pointer;
+				}
+				.back-index{
+					color: #fff;
+					line-height: 20px;
+					.rel;
+					top:10px;
+					background: url(../images/1200/arrow-return.png) left center no-repeat;
+					.pl(16px);
+				}
+				.logo{
+					.rect(368px, 120px);
+					.block;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.rule-box{
+			width: 750px;
+			margin: 0 auto;
+			.mt(254px);
+			.rel;
+			.btn-back{
+				.rect(100%, 254px);
+				.block;
+				.abs;
+				.pos(0, -254px);
+			}
+			.box{
+				.mb(30px);
+				color: #fff;
+				.ttl{
+					span{
+						.inline-block;
+						line-height: 33px;
+						background: #0070c5;
+						color: #fff;
+						border-radius: 5px;
+						padding: 0 10px;
+						font-size: 14px;
+					}
+				}
+				.info{
+					font-size: 14px;
+					line-height: 22px;
+					margin: 10px 0;
+				}
+			}
+
+			.prizes{
+				height: 325px;
+				overflow: hidden;
+				.mb(40px);
+				.p1{
+					.rect(346px, 325px);
+					background: url(../images/768/rule/p1.png);
+					.pull-left;
+					p{
+						width: 260px;
+						padding: 40px 0 0 40px;
+					}
+				}
+				.p2{
+					.rect(393px, 325px);
+					background: url(../images/768/rule/p2.png);
+					.pull-right;
+					
+					p{
+						width: 310px;
+						padding: 40px 0 0 40px;
+					}
+				}
+				p{
+					color: #fff;
+					line-height: 22px;
+					font-size: 14px;
+				}
+			}
+		}
+		.footer{
+			.pt(140px);
+			background: url(../images/768/logo-footer.jpg) top center no-repeat #fff;
+			height: 135px;
+			text-align: center;
+			.ttl{
+				font-size: 16px;
+				margin: 0 20px;
+				line-height: 24px;
+				.mb(20px);
+				color: #5f5f5f;
+			}
+			.btn-primary{
+				box-shadow: 0 0 0;
+				font-size: 16px;
+				padding: 10px 16px;
+			}
+		}
+
+	}
+}

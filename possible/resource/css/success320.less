@@ -1,0 +1,94 @@
+@import "prefixer";
+@import "reset";
+@media(max-width:767px) and (min-width:1px){
+	@pageWidth: 100%;
+	.mc-container{
+		background:url(../images/480/rule/bg.jpg) center 70px no-repeat #202020;
+		background-size: 100% auto;
+		.intel-it-center{
+			height: 70px;
+			background:#045eaa;
+			background: url(../images/480/header.jpg) top center no-repeat #045eaa;
+			.inset{
+				width: @pageWidth;
+				height: 70px;
+				margin: 0 auto;
+				.rel;
+				.share{
+					.rect(24px);
+					// background: url(../images/1200/ico-share.png);
+					background: url(../images/1200/ico-share.png);
+					.abs;
+					right: 10px;
+					bottom: 10px;
+					.pointer;
+					.hidden;
+				}
+				.back-index{
+					color: #fff;
+					.hidden;
+				}
+				.logo{
+					.rect(270px, 70px);
+					.block;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.success{
+			background: url(../images/992/success/kv-success.jpg) center center no-repeat #202020;
+			height: 516px;
+			.ttl{
+				.pt(240px);
+				text-align: center;
+				font-size: 30px;
+				line-height: 30px;
+				color: #00adf2;
+				font-weight: bold;
+			}
+			.msg{
+				text-align: center;
+				font-size: 24px;
+				line-height: 30px;
+				color: #fff;
+				margin: 15px 0;
+			}
+			.box{
+				text-align: center;
+				.btn-primary{
+					width: 130px;
+					height: 36px;
+					line-height: 24px;
+					box-shadow: 2px 2px 0 #005ea7;
+					&:after{
+						.ml(6px);
+					}
+				}
+			}
+		}
+
+		.footer{
+			.pt(100px);
+			background: url(../images/480/logo-footer.jpg) top center no-repeat #fff;
+			height: 175px;
+			text-align: center;
+			.ttl{
+				font-size: 16px;
+				margin: 0 20px;
+				line-height: 27px;
+				.mb(20px);
+				color: #5f5f5f;
+				br{
+					.block;
+				}
+			}
+			.btn-primary{
+				box-shadow: 0 0 0;
+				font-size: 18px;
+				padding: 10px 16px;
+			}
+		}
+
+	}
+}

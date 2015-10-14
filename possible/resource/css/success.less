@@ -1,0 +1,139 @@
+@import "prefixer";
+@import "reset";
+@font-face{font-family:"intel-clear";src:url("../fonts/intel-clear-latin.eot");src:url("../fonts/intel-clear-latin.eot?#iefix") format("embedded-opentype"),url('../fonts/intel-clear-latin.woff') format('woff'),url('../fonts/intel-clear-latin.ttf') format('truetype');font-weight:normal;font-style:normal}
+// @font-face{font-family:"intel-clear";src:url("../../us/en/Fonts/intel-clear-latin-bold.eot");src:url("../../us/en/Fonts/intel-clear-latin-bold.eot?#iefix") format("embedded-opentype"),url("../../us/en/Fonts/intel-clear-latin-bold.woff") format("woff"),url("../../us/en/Fonts/intel-clear-latin-bold.ttf") format("truetype");font-weight:bold;font-style:normal}
+// @font-face{font-family:"intel-clear";src:url("../../us/en/Fonts/intel-clear-latin-italic.eot");src:url("../../us/en/Fonts/intel-clear-latin-italic.eot?#iefix") format("embedded-opentype"),url("../../us/en/Fonts/intel-clear-latin-italic.woff") format("woff"),url("../../us/en/Fonts/intel-clear-latin-italic.ttf") format("truetype");font-weight:normal;font-style:italic}
+// @font-face{font-family:"intel-clear";src:url("../../us/en/Fonts/intel-clear-latin-bold-italic.eot");src:url("../../us/en/Fonts/intel-clear-latin-bold-italic.eot?#iefix") format("embedded-opentype"),url("../../us/en/Fonts/intel-clear-latin-bold-italic.woff") format("woff"),url("../../us/en/Fonts/intel-clear-latin-bold-italic.ttf") format("truetype");font-weight:bold;font-style:italic}
+// @font-face{font-family:"intel-clear";src:url("../../us/en/Fonts/intel-clear-latin-lite.eot");src:url("../../us/en/Fonts/intel-clear-latin-lite.eot?#iefix") format("embedded-opentype"),url("../../us/en/Fonts/intel-clear-latin-lite.woff") format("woff"),url("../../us/en/Fonts/intel-clear-latin-lite.ttf") format("truetype");font-weight:200;font-style:normal}
+// @font-face{font-family:"intel-clear";src:url("../../us/en/Fonts/intel-clear-latin-lite-italic.eot");src:url("../../us/en/Fonts/intel-clear-latin-lite-italic.eot?#iefix") format("embedded-opentype"),url("../../us/en/Fonts/intel-clear-latin-lite-italic.woff") format("woff"),url("../../us/en/Fonts/intel-clear-latin-lite-italic.ttf") format("truetype");font-weight:200;font-style:italic}
+*{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+html, body{
+	-webkit-text-size-adjust:100%; 
+	font-size: 12px;
+	font-family: "intel-clear";
+}
+//base 
+.mc-container{
+	ul, ol, li {
+		list-style:none;
+		margin:0;
+		padding:0;
+	}
+	p, input, button,table, tr, th, td, thead, tbody ,pre{
+		padding:0;
+		margin:0;
+	}
+	strong{font-weight:bold;}
+	h1, h2, h3, h4, h5, blockquote, dl, dt, dd {
+		margin:0;
+		padding:0;
+		font-weight:normal;
+	}
+	em, cite, i{font-style:normal;}
+	img{border:none;}
+	*{
+		box-sizing: content-box;
+	}
+	a{
+		text-decoration: none;
+	}
+
+	.row{
+		margin: 0;
+		.mb(20px);
+		overflow: hidden;
+	}
+
+
+	.btn-primary{
+		display: inline-block;
+		margin-bottom: 0;
+		font-weight: normal;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		background-image: none;
+		border: 1px solid transparent;
+		white-space: normal;
+		padding: 6px 16px;
+		font-size: 16px;
+		line-height: 1.428571429;
+		border-radius: 4px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+		box-sizing: border-box;
+		color: white;
+		background-color: #00aeef;
+		position: relative;
+		min-width: 96px;
+		border-radius: 2px;
+		box-shadow: 2px 2px 1px #000;
+		box-shadow: 2px 2px 0 rgba(0,0,0,0.15);
+		font-size: 14px;
+		border-width: 0;
+		white-space: normal;
+		border-color: #0062ac;
+		button{
+			outline: 0;
+			background: 0;
+			border: 0;
+			padding: 0;
+			color: inherit;
+		}
+		a{
+			color: #fff;
+		}
+		&:after{
+			content: '\203A';
+			margin-left: 16px;
+		}
+		&:hover{
+			color: #fff;
+			background-color: #005a9c;
+			border-color: #003f6e;
+			color: white;
+			background-color: #004280;
+		}
+	}
+	.frm-group{
+		input{
+			display: block;
+			width: 100%;
+			line-height: 16px;
+			height: 28px;
+			padding: 4px 12px;
+			font-size: 14px;
+			margin-bottom: .5em;
+			vertical-align: middle;
+			background-color: #fff;
+			background-image: none;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box
+		}
+	}
+	.simple{
+		.hidden;
+	}
+	.footer{
+		background-color: #fff;
+		.ttl{
+			br{
+				.hidden;
+			}
+		}
+	}
+
+}
+@import "success320";
+
+@import "success480";
+
+@import "success768";
+
+@import "success992";
+
+@import "success1650";

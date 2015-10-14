@@ -1,0 +1,92 @@
+@import "prefixer";
+@import "reset";
+
+@media(min-width:768px) and (max-width:991px){
+	@pageWidth: 750px;
+	.mc-container{
+		background:url(../images/768/rule/bg.jpg) center 120px no-repeat #202020;
+		.intel-it-center{
+			height: 120px;
+			background:#045eaa;
+			background: url(../images/768/header.jpg) top center no-repeat #045eaa;
+			.inset{
+				width: @pageWidth;
+				height: 120px;
+				margin: 0 auto;
+				.rel;
+				.share{
+					.rect(24px);
+					background: url(../images/1650/ico-share.jpg);
+					background: url(../images/1200/ico-share.png);
+					.abs;
+					right: 10px;
+					bottom: 10px;
+					.pointer;
+				}
+				.back-index{
+					color: #fff;
+					line-height: 20px;
+					.rel;
+					top:10px;
+					background: url(../images/1200/arrow-return.png) left center no-repeat;
+					.pl(16px);
+				}
+				.logo{
+					.rect(368px, 120px);
+					.block;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.success{
+			background: url(../images/992/success/kv-success.jpg) center center no-repeat #202020;
+			height: 516px;
+			.ttl{
+				.pt(240px);
+				text-align: center;
+				font-size: 30px;
+				line-height: 30px;
+				color: #00adf2;
+				font-weight: bold;
+			}
+			.msg{
+				text-align: center;
+				font-size: 24px;
+				line-height: 60px;
+				color: #fff;
+			}
+			.box{
+				text-align: center;
+				.btn-primary{
+					width: 130px;
+					height: 36px;
+					line-height: 24px;
+					box-shadow: 2px 2px 0 #005ea7;
+					&:after{
+						.ml(6px);
+					}
+				}
+			}
+		}
+		.footer{
+			.pt(140px);
+			background: url(../images/768/logo-footer.jpg) top center no-repeat #fff;
+			height: 135px;
+			text-align: center;
+			.ttl{
+				font-size: 16px;
+				margin: 0 20px;
+				line-height: 24px;
+				.mb(20px);
+				color: #5f5f5f;
+			}
+			.btn-primary{
+				box-shadow: 0 0 0;
+				font-size: 16px;
+				padding: 10px 16px;
+			}
+		}
+
+	}
+}

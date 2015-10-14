@@ -1,0 +1,100 @@
+@import "prefixer";
+@import "reset";
+@media(min-width:1200px){
+	.mc-container{
+		@pageWidth:1610px;
+		background:url(../images/1200/rule/bg.jpg) center 120px no-repeat #202020;
+		.intel-it-center{
+			height: 120px;
+			background:#045eaa;
+			background: url(../images/768/header.jpg) center center no-repeat #045eaa;
+			.inset{
+				width: @pageWidth;
+				height: 120px;
+				margin: 0 auto;
+				.rel;
+				.share{
+					.rect(24px);
+					background: url(../images/1650/ico-share.jpg);
+					background: url(../images/1200/ico-share.png);
+					.abs;
+					right: 10px;
+					bottom: 10px;
+					.pointer;
+				}
+				.back-index{
+					color: #fff;
+				}
+			}
+		}
+
+
+		.rule-box{
+			width: 1050px;
+			margin: 0 auto;
+			.mt(254px);
+			.rel;
+			.btn-back{
+				.rect(100%, 254px);
+				.block;
+				.abs;
+				.pos(0, -254px);
+			}
+
+			.box{
+				.mb(30px);
+				color: #fff;
+				.ttl{
+					span{
+						.inline-block;
+						line-height: 33px;
+						background: #0070c5;
+						color: #fff;
+						border-radius: 5px;
+						padding: 0 10px;
+						font-size: 14px;
+					}
+				}
+				.info{
+					font-size: 14px;
+					line-height: 22px;
+					margin: 10px 0;
+				}
+			}
+
+			.prizes{
+				height: 229px;
+				overflow: hidden;
+				.mb(40px);
+				.p1{
+					.rect(484px, 229px);
+					background: url(../images/1200/rule/p1.png);
+					.pull-left;
+					p{
+						width: 170px;
+						padding: 54px 0 0 44px;
+					}
+				}
+				.p2{
+					.rect(553px, 229px);
+					background: url(../images/1200/rule/p2.png);
+					.pull-right;
+					
+					p{
+						width: 220px;
+						padding: 54px 0 0 44px;
+					}
+				}
+				p{
+					color: #fff;
+					line-height: 22px;
+					font-size: 14px;
+				}
+			}
+		}
+
+		.footer{
+			background-color: #fff;
+		}
+	}
+}

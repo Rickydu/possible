@@ -1,0 +1,146 @@
+Index: index.html
+===================================================================
+--- index.html	(revision 3330)
++++ index.html	(working copy)
+@@ -203,7 +203,7 @@
+ 			<div class="regist">
+ 				<div class="btn btn-close">[关闭]</div>
+ 				<div class="ttl">请填写真实的注册信息（*为必填项）</div>
+-				<form method="POST" action="https://s334284386.t.eloqua.com/e/f2">
++				<form id="frm_regist" method="POST" action="https://s334284386.t.eloqua.com/e/f2">
+ 					<!-- this portion do not edit -->
+ 					<input type="hidden" name="elqFormName" value="ITDM.CN.ZH.Off-domain.ITPossibleform.3382" />
+ 					<input type="hidden" name="elqSiteID" value="334284386" />
+@@ -215,19 +215,19 @@
+ 					<input type="hidden" name="country" value="China" />
+ 					<!--/ this portion do not edit -->
+ 					<div class="frm-group">
+-						<label><i>*</i>姓</label>
++						<label><i>&nbsp;</i>姓</label>
+ 						<input type="text" class="frm-ctrl" name="firstName">
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>名</label>
++						<label><i>&nbsp;</i>名</label>
+ 						<input type="text" class="frm-ctrl" name="lastName">
+ 					</div>
+ 					<div class="frm-group">
+ 						<label><i>*</i>电子邮件</label>
+-						<input type="text" class="frm-ctrl" name="emailAddress">
++						<input type="text" id="input_email" class="frm-ctrl" name="emailAddress">
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>手机号码</label>
++						<label><i>&nbsp;</i>手机号码</label>
+ 						<input type="text" class="frm-ctrl" name="mobilePhone">
+ 					</div>
+ 					<div class="frm-group">
+@@ -235,7 +235,7 @@
+ 						<input type="text" class="frm-ctrl" name="company">
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>公司规模</label>
++						<label><i>&nbsp;</i>公司规模</label>
+ 						<select name="intelCompanySize1">
+ 							<option value="Please Select">请选择…</option>
+ 							<option value="<100 Employees">100 名以下员工</option>
+@@ -245,7 +245,7 @@
+ 						</select>
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>职务名称</label>
++						<label><i>&nbsp;</i>职务名称</label>
+ 						<select name="intelJobFunction1">
+ 							<option value="Please Select">请选择…</option>
+ 							<option value="Administration/Clerical">行政/职员</option>
+@@ -308,7 +308,7 @@
+ 						</select>
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>行业</label>
++						<label><i>&nbsp;</i>行业</label>
+ 						<select name="intelIndustry1">
+ 							<option value="Please Select…">请选择…</option>
+ 							<option value="Accommodation and Food Services">住宿与餐饮业</option>
+Index: index.ie.html
+===================================================================
+--- index.ie.html	(revision 3330)
++++ index.ie.html	(working copy)
+@@ -153,7 +153,7 @@
+ 			<div class="regist">
+ 				<div class="btn btn-close">[关闭]</div>
+ 				<div class="ttl">请填写真实的注册信息（*为必填项）</div>
+-				<form method="POST" action="https://s334284386.t.eloqua.com/e/f2">
++				<form id="frm_regist" method="POST" action="https://s334284386.t.eloqua.com/e/f2">
+ 					<!-- this portion do not edit -->
+ 					<input type="hidden" name="elqFormName" value="ITDM.CN.ZH.Off-domain.ITPossibleform.3382" />
+ 					<input type="hidden" name="elqSiteID" value="334284386" />
+@@ -165,19 +165,19 @@
+ 					<input type="hidden" name="country" value="China" />
+ 					<!--/ this portion do not edit -->
+ 					<div class="frm-group">
+-						<label><i>*</i>姓</label>
++						<label><i>&nbsp;</i>姓</label>
+ 						<input type="text" class="frm-ctrl" name="firstName">
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>名</label>
++						<label><i>&nbsp;</i>名</label>
+ 						<input type="text" class="frm-ctrl" name="lastName">
+ 					</div>
+ 					<div class="frm-group">
+ 						<label><i>*</i>电子邮件</label>
+-						<input type="text" class="frm-ctrl" name="emailAddress">
++						<input type="text" class="frm-ctrl" id="input_email" name="emailAddress">
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>手机号码</label>
++						<label><i>&nbsp;</i>手机号码</label>
+ 						<input type="text" class="frm-ctrl" name="mobilePhone">
+ 					</div>
+ 					<div class="frm-group">
+@@ -185,7 +185,7 @@
+ 						<input type="text" class="frm-ctrl" name="company">
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>公司规模</label>
++						<label><i>&nbsp;</i>公司规模</label>
+ 						<select name="intelCompanySize1">
+ 							<option value="Please Select">请选择…</option>
+ 							<option value="<100 Employees">100 名以下员工</option>
+@@ -195,7 +195,7 @@
+ 						</select>
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>职务名称</label>
++						<label><i>&nbsp;</i>职务名称</label>
+ 						<select name="intelJobFunction1">
+ 							<option value="Please Select">请选择…</option>
+ 							<option value="Administration/Clerical">行政/职员</option>
+@@ -258,7 +258,7 @@
+ 						</select>
+ 					</div>
+ 					<div class="frm-group">
+-						<label><i>*</i>行业</label>
++						<label><i>&nbsp;</i>行业</label>
+ 						<select name="intelIndustry1">
+ 							<option value="Please Select…">请选择…</option>
+ 							<option value="Accommodation and Food Services">住宿与餐饮业</option>
+Index: resource/js/main.js
+===================================================================
+--- resource/js/main.js	(revision 3330)
++++ resource/js/main.js	(working copy)
+@@ -278,4 +278,13 @@
+         $('.mask').show();
+         $('.mask .qrbar').show();
+     });
++
++    $("#frm_regist").submit(function(e){
++
++        if($("#input_email").val() == ''){
++            alert("请输入您的邮箱地址");
++            e.preventDefault();
++        }
++
++    });
+  });
